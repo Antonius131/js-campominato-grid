@@ -23,11 +23,12 @@ function squareGenerator() {
    return createSquare;
 }
 
-
+const gridWrapper = document.getElementById('grid-wrapper');
 const playBtn = document.getElementById('play-btn');
 
 playBtn.addEventListener('click', function(){
-   const gridWrapper = document.getElementById('grid-wrapper');
+
+   gridWrapper.innerHTML='';
    gridWrapper.classList.add('game-grid');
 
    for (let i = 1;  i <= 100;  i++) {
@@ -41,4 +42,5 @@ playBtn.addEventListener('click', function(){
 
       gridWrapper.append(square);
    };
+   
 });
