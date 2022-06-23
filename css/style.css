@@ -3,3 +3,52 @@
    padding: 0;
    box-sizing: border-box;
 }
+
+
+
+/* navbar*/
+
+#btn-nav,
+footer {
+   background-color: #0a0c26;
+   padding: 1rem 3rem;
+}
+
+
+
+/* main */
+
+main {
+   padding: 3rem;
+   background-color: #7fffd4;
+}
+
+#grid-wrapper {
+   border: 1px solid #0a0c26;
+   height: 650px;
+   width: 650px;
+   margin: 0 auto;
+}
+
+.clearfix::after {
+   content: '';
+   display: table;
+   clear: both;
+}
+
+.square {
+   width: calc(100% / 10);
+   height: calc(100% / 10);
+   border: 1px solid #0a0c26;
+   float: left;
+   color: #0a0c26;
+}
+
+
+
+/* footer */
+
+footer {
+   color: #fff;
+}
+
