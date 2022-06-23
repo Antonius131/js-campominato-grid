@@ -25,8 +25,8 @@ main {
 
 .game-grid {
    border: 1px solid #0a0c26;
-   height: 650px;
-   width: 650px;
+   height: 600px;
+   width: 600px;
    margin: 0 auto;
 }
 
@@ -43,6 +43,8 @@ main {
    float: left;
    color: #0a0c26;
    text-align: center;
+   padding: 1rem;
+   cursor: pointer;
 }
 
 .active {

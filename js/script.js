@@ -16,6 +16,7 @@
  */
 
 const gridWrapper = document.getElementById('grid-wrapper');
+gridWrapper.classList.add('game-grid');
 
 for (let i = 1;  i <= 100;  i++) {
    const square = squareGenerator();
