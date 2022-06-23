@@ -17,10 +17,15 @@
 
 const gridWrapper = document.getElementById('grid-wrapper');
 
-for (let i = 0;  i <= 100;  i++) {
+for (let i = 1;  i <= 100;  i++) {
    const square = squareGenerator();
    square.innerHTML = i;
 
+   square.addEventListener('click', function(){
+      square.classList.toggle('active');
+   });
+
+   gridWrapper.append(square);
 }
 
 
