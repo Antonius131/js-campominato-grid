@@ -23,7 +23,7 @@ main {
    background-color: #7fffd4;
 }
 
-#grid-wrapper {
+.game-grid {
    border: 1px solid #0a0c26;
    height: 650px;
    width: 650px;
