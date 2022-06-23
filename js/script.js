@@ -15,24 +15,30 @@
  *    
  */
 
-const gridWrapper = document.getElementById('grid-wrapper');
-gridWrapper.classList.add('game-grid');
-
-for (let i = 1;  i <= 100;  i++) {
-   const square = squareGenerator();
-   square.innerHTML = i;
-
-   square.addEventListener('click', function(){
-      square.classList.toggle('active');
-   });
-
-   gridWrapper.append(square);
-}
-
 
 function squareGenerator() {
-      const createSquare = document.createElement('div');
-      createSquare.classList.add('square');
+   const createSquare = document.createElement('div');
+   createSquare.classList.add('square');
 
-      return createSquare;
+   return createSquare;
 }
+
+
+const playBtn = document.getElementById('play-btn');
+
+playBtn.addEventListener('click', function(){
+   const gridWrapper = document.getElementById('grid-wrapper');
+   gridWrapper.classList.add('game-grid');
+
+   for (let i = 1;  i <= 100;  i++) {
+      const square = squareGenerator();
+      square.innerHTML = i;
+
+      square.addEventListener('click', function(){
+         square.classList.toggle('active');
+         console.log(`hai cliccato la cella ${i}`);
+      });
+
+      gridWrapper.append(square);
+   };
+});
